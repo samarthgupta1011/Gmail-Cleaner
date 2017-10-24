@@ -13,6 +13,9 @@ a /= 50
 email = raw_input("Enter your email ")
 password = raw_input("Enter your password")
 
+# Download chrome driver from https://sites.google.com/a/chromium.org/chromedriver/downloads
+# Replace with your path tot he driver
+
 driver = webdriver.Chrome('/Users/samarthgupta/Downloads/chromedriver')
 driver.get("https://mail.google.com/")
 assert "Gmail" in driver.title
